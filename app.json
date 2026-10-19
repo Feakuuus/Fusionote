@@ -1,0 +1,68 @@
+{
+  "expo": {
+    "name": "Fusionote",
+    "slug": "fusio",
+    "owner": "feakuuu",
+    "version": "1.1.0",
+    "description": "Fusionote — Twoje myśli. Zawsze przy Tobie.",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#070614",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fusio.app",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Fusionote potrzebuje dostępu do zdjęć, aby dodawać obrazki do myśli."
+      }
+    },
+    "android": {
+      "package": "com.fusio.app",
+      "versionCode": 2,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundImage": "./assets/adaptive-bg.png",
+        "monochromeImage": "./assets/monochrome-icon.png",
+        "backgroundColor": "#070614"
+      },
+      "edgeToEdgeEnabled": true,
+      "softwareKeyboardLayoutMode": "resize",
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.READ_MEDIA_AUDIO",
+        "android.permission.READ_MEDIA_VIDEO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 180,
+          "resizeMode": "contain",
+          "backgroundColor": "#070614"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Fusionote potrzebuje dostępu do zdjęć, aby dodawać obrazki do myśli.",
+          "cameraPermission": false,
+          "microphonePermission": false
+        }
+      ],
+      "expo-asset"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "26cde46f-6221-4785-8fbb-38468a352ed9"
+      }
+    }
+  }
+}
